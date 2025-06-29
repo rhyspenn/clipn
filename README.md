@@ -1,0 +1,3 @@
+# Clip
+
+Clip Image Path
