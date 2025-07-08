@@ -9,14 +9,44 @@
     "commands": [
         {
             "name": "clipn",
-            "title": "Clipn", 
+            "title": "Clipn",
             "description": "Get newest cached file path from Raycast clipboard",
             "mode": "no-view"
+        },
+        {
+            "name": "upload-image",
+            "title": "Upload Image to Cloudinary",
+            "description": "Upload image from clipboard to Cloudinary and get URL",
+            "mode": "no-view"
+        }
+    ],
+    "preferences": [
+        {
+            "name": "cloudinaryCloudName",
+            "title": "Cloudinary Cloud Name",
+            "description": "Your Cloudinary cloud name",
+            "type": "textfield",
+            "required": true
+        },
+        {
+            "name": "cloudinaryApiKey",
+            "title": "Cloudinary API Key",
+            "description": "Your Cloudinary API key",
+            "type": "textfield",
+            "required": true
+        },
+        {
+            "name": "cloudinaryApiSecret",
+            "title": "Cloudinary API Secret",
+            "description": "Your Cloudinary API secret",
+            "type": "password",
+            "required": true
         }
     ],
     "dependencies": {
         "@raycast/api": "^1.100.3",
-        "@raycast/utils": "^1.17.0"
+        "@raycast/utils": "^1.17.0",
+        "cloudinary": "^2.7.0"
     },
     "devDependencies": {
         "@raycast/eslint-config": "^2.0.4",
